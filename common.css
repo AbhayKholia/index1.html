@@ -1,0 +1,51 @@
+#nav{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.product{
+    display: grid;
+    width: 80%;;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.product>div{
+    width: 30%;
+
+}
+.box{
+    width: 300px;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    background: rgba(0,0,0.4);
+    text-align: center;
+    align-items: center;
+margin: auto;
+margin-top: 10%;
+}
+.box>h1{
+    color:white ;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.box input[type = "submit"]{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid blue;
+    padding: 14px,10px;
+    width: 100px;
+    cursor: pointer;
+
+}
+

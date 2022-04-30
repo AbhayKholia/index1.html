@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+
+  
+
+    <form class="box" action="login.html">
+   <h1>
+       login
+   </h1>
+   <input type="text" name = "" placeholder= "Enter USername" id="username" >
+   <input type="text" name = "" placeholder= "Enter Password" id="password" >
+   <input type="submit" name="" value ="login" onclick="validate()">
+
+    </form>
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit" ,validate)
+
+function validate() {
+  event.preventDefault();
+
+var username = document.getElementById("username").value
+var password = document.getElementById("password").value
+if(username=="abhay kholia"&& password=="abhay")
+{
+   window.location.href="signup.html";
+}
+else
+{
+alert("login failed")
+}
+    
+
+}
+</script>
